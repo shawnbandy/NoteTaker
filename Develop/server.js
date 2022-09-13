@@ -69,6 +69,7 @@ app.post('/api/notes', (req, res) => {
 
 })
 
+
 //!this will be app.delete if I can get it working
 app.delete('/api/notes/:id', (req, res) => {
     console.info(`${req.method} requested`);
@@ -79,11 +80,21 @@ app.delete('/api/notes/:id', (req, res) => {
 
         for (let i = 0; i < db.length; i++) {
 
-            console.info(db[i].id)
-
             if (deleteItem == db[i].id) {
                 console.info('Match found')
-                db.filter(note => note.id == deleteItem )
+
+                db.splice(i, 1)
+
+                const newDB = JSON.stringify(db);
+
+                fs.writeFile(`./db/db.json`, newDB, (err) => {
+                    if (err) {
+                        console.log(err)
+                    } else {
+                        console.log('Database has been updated with your delete')
+                    }
+                })
+
                 return res.json(db)
             } 
 
