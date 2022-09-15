@@ -36,4 +36,4 @@ Application URL: https://notetaker-shawn-canavan.herokuapp.com/
 
 Application GitHub: https://github.com/shawnbandy/NoteTaker
 
-Application Image: !(https://github.com/shawnbandy/NoteTaker/blob/main/Assets/imagesimages.gif)
+Application Image: ![alt text](https://github.com/shawnbandy/NoteTaker/blob/main/Assets/imagesimages.gif)
