@@ -51,7 +51,6 @@ app.post('/api/notes', (req, res) => {
 
         const newDB = JSON.stringify(db);
 
-        //*writing this to a separate file for now
         fs.writeFile(`./db/db.json`, newDB, (err) => {
             if (err) {
                 console.log(err)

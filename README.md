@@ -25,13 +25,15 @@
 
 ### Bonus
     1. Delete /api/notes/:id should receive a query parameter of the note id ✅
-    2. Delete should remove the note via its id property from the db.json file
+    2. Delete should remove the note via its id property from the db.json file ✅
 
 
-Application Description: 
+Application Description: This application is a note taker service that uses express.js to handle back end features such as GET, POST, and DELETE. The application lands on the home page, and then redirects the user to the note taking HTML upon button press, which is handled as a GET request. The left hand column uses the database (db.json) information to populate the notes. The user can type in notes and a description on the right hand side, which will cause a save button to appear. When hitting the save button, a POST request is made, and adds the note to the database JSON with the note title, description, and gives it a unique ID. The user is also able to delete any note by hitting the trash icon, which is a DELETE request to remove it via its ID from the JSON file. All requests are logged to the server.
 
 
 
 Application URL: 
 
-Application GitHub: 
+Application GitHub: https://github.com/shawnbandy/NoteTaker
+
+Application Image: 
