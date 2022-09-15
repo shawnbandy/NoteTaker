@@ -9,7 +9,7 @@
     6. Clicking the 'write icon' presents empty note fields ✅
     7. Application must use Express.js ✅
     8. Notes must have a unique ID in the JSON file ✅
-    9. Application must be deployed to Heroku
+    9. Application must be deployed to Heroku ✅
 
 ### Application specifics:
     1. server.js should include db.json file ✅
@@ -32,8 +32,8 @@ Application Description: This application is a note taker service that uses expr
 
 
 
-Application URL: 
+Application URL: https://notetaker-shawn-canavan.herokuapp.com/
 
 Application GitHub: https://github.com/shawnbandy/NoteTaker
 
-Application Image: 
+Application Image: !(./Assets/imagesimages.gif)
