@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const db = require('./db/db.json'); //*db = database
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 const fs = require('fs');
 
 //*this will make a random charset with numbers and put it to string
@@ -75,7 +75,7 @@ app.delete('/api/notes/:id', (req, res) => {
 
     const deleteItem = req.params.id;
 
-    if(db.some(note => note.id == deleteItem)){
+    if (db.some(note => note.id == deleteItem)) {
 
         for (let i = 0; i < db.length; i++) {
 
@@ -95,11 +95,11 @@ app.delete('/api/notes/:id', (req, res) => {
                 })
 
                 return res.json(db)
-            } 
+            }
 
         }
 
-    }else {
+    } else {
         console.info('No ID found')
     }
 
